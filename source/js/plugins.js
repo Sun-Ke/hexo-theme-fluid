@@ -120,6 +120,9 @@ Fluid.plugins = {
       if ($pre.find('span.line').length > 0) {
         return;
       }
+      if ($pre.find('code').length == 0 && $pre.prop('class').length > 0) {
+        return;
+      }
 
       var lang = '';
 
